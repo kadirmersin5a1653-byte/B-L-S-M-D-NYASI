@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BİLİŞİM</title>
+    <link rel="stylesheet" href="blsm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+</head>
+<body>
+
+  
+<nav class="navbar">
+     <a href="blsm.html"> <div class="logo">BİLİŞİM <span>DÜNYASI</span></div> </a>
+    
+    <ul class="nav-links">
+        <li><a href="blsm.html">Ana Sayfa</a></li>
+        
+        <!-- Açılır Alt Menü (Dropdown) -->
+        <li class="dropdown">
+            <a href="#domains" class="dropbtn">Bilişim Dalları <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="yapay.html">Yapay Zeka & Makine Öğrenmesi</a>
+                <a href="siber.html">Siber Güvenlik</a> 
+               
+            </div>
+        </li>
+        
+        <li><a href="hakkımızda.html">Hakkımızda</a></li>
+        
+
+       <button id="theme-toggle" class="theme-btn" title="Temayı Değiştir">
+        <i class="fas fa-sun" id="theme-icon"></i>
+    </button>
+    <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const body = document.body;
+
+    themeToggleBtn.addEventListener('click', function() {
+        body.classList.toggle('light-mode');
+        
+        // İkonu güneş ve ay arasında değiştir
+        if (body.classList.contains('light-mode')) {
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon'); // Beyaz moddayken ay simgesi olsun ki karanlığa dönebileceğini göstersin
+        } else {
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun'); // Siyah moddayken güneş simgesi olsun
+        }
+    });
+</script>
+</button>
+    </ul>
+</nav>
+    <hr>
+    <br>
+
+    <!-- Ana Sayfa / Hero Alanı -->
+<section id="home" class="hero-section">
+    <div class="hero-content">
+        <h1>Geleceğin Teknoloji Portalına <span>Hoş Geldiniz</span></h1>
+        <p>Bilişim dünyasının en güncel ve kritik 20 alt dalını keşfedin.</p>
+    </div>
+</section>
+
+
+<!-- 20 Görsel ve Yazılı İçerik Akışı -->
+<section id="domains" class="domains-container">
+    <h2 class="section-title">Bilişim ve Yapay Zeka Dünyası</h2>
+
+    <!-- Kart 1 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780efad99a?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>1. Yapay Zeka & Makine Öğrenmesi</h3>
+            <p>Yapay zeka, bilgisayar sistemlerinin insan zekasını taklit ederek öğrenme, akıl yürütme ve karar verme yetenekleri kazanmasını sağlayan devrim niteliğinde bir bilişim dalıdır.</p>
+        </div>
+    </div>
+
+    <!-- Kart 2 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>2. Siber Güvenlik</h3>
+            <p>Ağları, bilgisayarları ve hassas verileri dijital saldırılardan, yetkisiz erişimlerden ve zararlı yazılımlardan koruyan stratejiler ve güvenlik duvarı mimarileri bütünüdür.</p>
+        </div>
+    </div>
+
+    <!-- Kart 3 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>3. Yazılım & Web Geliştirme</h3>
+            <p>Kullanıcıların ekranda gördüğü arayüzlerden arka plandaki devasa sunucu mimarilerine kadar uçtan uca modern web teknolojileri ve ölçeklenebilir kod yapıları inşa edilir.</p>
+        </div>
+    </div>
+
+    <!-- Kart 4 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>4. Veri Bilimi & Büyük Veri</h3>
+            <p>Ham ve karmaşık büyük verileri istatistiksel yöntemler, matematiksel modellemeler ve yapay zeka araçları kullanarak anlamlı içgörülere dönüştüren disiplinler arası bir alandır.</p>
+        </div>
+    </div>
+
+    <!-- Kart 5 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>5. Bulut Bilişim & DevOps</h3>
+            <p>Sunucu ve depolama hizmetlerinin internet üzerinden esnek sunulmasıdır. DevOps ise kodların daha hızlı, güvenli ve hatasız canlıya alınmasını otomatize eder.</p>
+        </div>
+    </div>
+
+    <!-- Kart 6 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>6. Robotik & Nesnelerin İnterneti (IoT)</h3>
+            <p>Sensörler ve akıllı cihazların internet üzerinden haberleşerek çevrelerini algılaması ve otomatik tepki vermesiyle dijital dünyayı fiziksel dünyayla buluşturan köprüdür.</p>
+        </div>
+    </div>
+
+    <!-- Kart 7 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>7. Blokzincir & Kriptografi</h3>
+            <p>Merkeziyetsiz, güvenli ve şeffaf veri transferi sağlayan, finans teknolojilerinden akıllı kontratlara kadar pek çok sektörü dönüştüren dağıtık defter teknolojisidir.</p>
+        </div>
+    </div>
+
+    <!-- Kart 8 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>8. Artırılmış & Sanal Gerçeklik (AR/VR)</h3>
+            <p>Kullanıcılara tamamen dijital simülasyon ortamları sunan ya da gerçek dünya üzerine dijital katmanlar ekleyerek deneyimi zenginleştiren etkileşimli teknolojilerdir.</p>
+        </div>
+    </div>
+
+    <!-- Kart 9 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>9. Kuantum Bilişim</h3>
+            <p>Klasik bilgisayarların yıllarca çözemeyeceği karmaşık problemleri kuantum mekaniği ilkelerini kullanarak saniyeler içinde çözmeyi hedefleyen gelecek nesil işlem gücüdür.</p>
+        </div>
+    </div>
+
+    <!-- Kart 10 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>10. Otonom Sistemler</h3>
+            <p>İnsan müdahalesine gerek duyulmaksızın çevresini algılayan, analiz eden ve kendi kararlarını vererek hareket eden insansız araç ve hava taşıtı teknolojileridir.</p>
+        </div>
+    </div>
+
+    <!-- Kart 11 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>11. Etik Hackerlık & Sızma Testleri</h3>
+            <p>Sistemlerdeki açık ve zafiyetleri kötü niyetli kişilerden önce tespit edip kapatmak amacıyla yasal olarak gerçekleştirilen simüle edilmiş siber saldırı çalışmalarıdır.</p>
+        </div>
+    </div>
+
+    <!-- Kart 12 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>12. Mobil Uygulama Geliştirme</h3>
+            <p>iOS ve Android ekosistemleri için performanslı, kullanıcı dostu ve modern arayüzlere sahip akıllı telefon uygulamalarının tasarlanması ve kodlanması sürecidir.</p>
+        </div>
+    </div>
+
+    <!-- Kart 13 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>13. Donanım & Mikrodenetleyiciler</h3>
+            <p>Bilgisayarların ve akıllı sistemlerin fiziksel bileşenlerini oluşturan çip tasarımları, işlemci mimarileri ve elektronik devre sistemlerinin geliştirilmesi alanıdır.</p>
+        </div>
+    </div>
+
+    <!-- Kart 14 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>14. Bilgisayarlı Görü (Computer Vision)</h3>
+            <p>Yapay zekanın dijital görüntülere ve videolara bakarak anlam çıkarmasını, nesneleri tanımasını, yüz ve hareket analizi yapabilmesini sağlayan alt bilim dalıdır.</p>
+        </div>
+    </div>
+
+    <!-- Kart 15 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>15. Doğal Dil İşleme (NLP)</h3>
+            <p>Bilgisayarların insan dilini yazılı veya sözlü olarak anlamasını, yorumlamasını ve hatta tıpkı bir insan gibi anlamlı metinler üretebilmesini sağlayan AI teknolojisidir.</p>
+        </div>
+    </div>
+
+    <!-- Kart 16 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>16. Ağ ve Telekomünikasyon</h3>
+            <p>Küresel ölçekte veri iletimini sağlayan fiber optik altyapılar, 5G/6G kablosuz iletişim ağları ve yönlendirici sistemlerin mimari altyapı disiplinidir.</p>
+        </div>
+    </div>
+
+    <!-- Kart 17 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>17. UI/UX Tasarım</h3>
+            <p>Dijital ürünlerin kullanıcılar tarafından en kolay, anlaşılır ve estetik şekilde deneyimlenmesini sağlayan arayüz ve deneyim optimizasyon sanatıdır.</p>
+        </div>
+    </div>
+
+    <!-- Kart 18 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>18. Büyük Veri Analitiği</h3>
+            <p>Devasa veri havuzlarından işletmelerin stratejik hamleler yapabilmesi için anlık istatistiki raporlar ve tahminleme modelleri çıkaran analitik süreçtir.</p>
+        </div>
+    </div>
+
+    <!-- Kart 19 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>19. Oyun Geliştirme (Game Dev)</h3>
+            <p>Unreal Engine ve Unity gibi gelişmiş motorlar kullanılarak yüksek grafikli, gerçekçi fizik motorlarına sahip modern video oyunlarının üretim sürecidir.</p>
+        </div>
+    </div>
+
+    <!-- Kart 20 -->
+    <div class="tech-card">
+        <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1000&q=80');"></div>
+        <div class="tech-info">
+            <h3>20. Bilişim Hukuku & Güvenliği</h3>
+            <p>Dijital dünyadaki veri gizliliği, telif hakları, siber suçlar ve kişisel verilerin korunması (KVKK/GDPR) kanunlarını inceleyen hukuk ve güvenlik dalıdır.</p>
+        </div>
+    </div>
+
+    ""
+
+</section>
+    
+</body>
+</html>
