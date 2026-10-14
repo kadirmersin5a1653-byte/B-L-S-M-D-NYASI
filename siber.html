@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BİLİSİM</title>
+    <link rel="stylesheet" href="blsm.css">
+    <script src="scrşp.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+     <a href="blsm.html"> <div class="logo">BİLİŞİM <span>DÜNYASI</span></div> </a>
+    
+    <ul class="nav-links">
+        <li><a href="blsm.html">Ana Sayfa</a></li>
+        
+        <!-- Açılır Alt Menü (Dropdown) -->
+        <li class="dropdown">
+            <a href="#domains" class="dropbtn">Bilişim Dalları <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="yapay.html">Yapay Zeka & Makine Öğrenmesi</a>
+                <a href="siber.html">Siber Güvenlik</a>
+               
+            </div>
+        </li>
+        
+        <li><a href="hakkımızda.html">Hakkımızda</a></li>
+        
+    <button id="theme-toggle" class="theme-btn" title="Temayı Değiştir">
+        <i class="fas fa-sun" id="theme-icon"></i>
+    </button>
+    <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const body = document.body;
+
+    themeToggleBtn.addEventListener('click', function() {
+        body.classList.toggle('light-mode');
+        
+        // İkonu güneş ve ay arasında değiştir
+        if (body.classList.contains('light-mode')) {
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon'); // Beyaz moddayken ay simgesi olsun ki karanlığa dönebileceğini göstersin
+        } else {
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun'); // Siyah moddayken güneş simgesi olsun
+        }
+    });
+</script>
+</button>
+    </ul>
+</nav>
+    <hr>
+    <br>
+
+    <section class="hero-section" style="background: linear-gradient(rgba(11,15,25,0.8), rgba(11,15,25,0.9)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1400&q=80'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h1>Siber Güvenlik ve <span>Ağ Savunması</span></h1>
+            <p>Dijital kalelerin korunması ve veri gizliliğinin kesintisiz güvencesi.</p>
+        </div>
+    </section>
+
+    <!-- Detaylı İçerik Alanı -->
+    <div class="domains-container">
+        
+        <!-- Büyük Tanıtım Kutusu -->
+        <div style="background-color: #111827; border: 1px solid #1f2937; border-radius: 14px; padding: 40px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <h2 style="font-size: 26px; color: #fff; margin-bottom: 20px;">Siber Güvenlik Neden Hayati Önem Taşır?</h2>
+            <p style="color: #9ca3af; line-height: 1.8; font-size: 15px; margin-bottom: 15px;">
+                Dijitalleşen dünyada bireylerin, şirketlerin ve hatta devletlerin en değerli varlığı verilerdir. Siber güvenlik; ağları, sunucuları, mobil cihazları ve hassas verileri sızma girişimlerinden, fidye yazılımlarından ve kötü amaçlı dijital saldırılardan koruyan en kritik disiplindir.
+            </p>
+            <p style="color: #9ca3af; line-height: 1.8; font-size: 15px;">
+                Bir sistemin açıklarını kötü niyetli kişilerden önce bulup kapatmak (Etik Hackerlık) veya duvarları aşılmaz kılmak modern bilişim dünyasının en çok aranan uzmanlık alanları arasındadır.
+            </p>
+        </div>
+
+        <h3 class="section-title">Alt Savunma ve Uzmanlık Alanları</h3>
+
+        <!-- Alt Kriter Kart 1 -->
+        <div class="tech-card">
+            <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1000&q=80');"></div>
+            <div class="tech-info">
+                <h3>Etik Hackerlık & Sızma Testleri</h3>
+                <p>Sistemlerdeki zafiyetleri yasal yollarla test ederek olası siber saldırıları önceden simüle eden ve açıkların kapatılmasını sağlayan saldırı/savunma mekanizmasıdır.</p>
+            </div>
+        </div>
+
+        <!-- Alt Kriter Kart 2 -->
+        <div class="tech-card">
+            <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1000&q=80');"></div>
+            <div class="tech-info">
+                <h3>Veri Gizliliği & Kriptografi</h3>
+                <p>Hassas verilerin şifrelenerek okunamaz hale getirilmesi, yetkisiz kişilerin erişiminin engellenmesi ve KVKK/GDPR gibi veri koruma standartlarının uygulanmasıdır.</p>
+            </div>
+        </div>
+
+        <!-- Alt Kriter Kart 3 -->
+        <div class="tech-card">
+            <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1000&q=80');"></div>
+            <div class="tech-info">
+                <h3>Ağ Güvenliği & Güvenlik Duvarları</h3>
+                <p>Kurumsal ağ trafiğini izleyen, zararlı paketleri filtreleyen ve dış dünyadan gelebilecek yetkisiz ağ erişimlerini engelleyen donanım ve yazılım katmanlarıdır.</p>
+            </div>
+        </div>
+
+        <!-- Geri Dönüş Butonu -->
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="blsm.html" style="display: inline-block; background: transparent; border: 2px solid #00f0ff; color: #00f0ff; padding: 14px 30px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: 0.3s;">
+                <i class="fas fa-arrow-left"></i> Ana Sayfaya Dön
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 60px;">
+        <p>© 2026 Bilişim Dünyası | Siber Güvenlik Bölümü</p>
+    </footer>
+    
+</body>
+</html>

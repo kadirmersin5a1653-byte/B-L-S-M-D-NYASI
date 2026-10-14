@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BİLİSİM</title>
+    <link rel="stylesheet" href="blsm.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+     <a href="blsm.html"> <div class="logo">BİLİŞİM <span>DÜNYASI</span></div> </a>
+    
+    <ul class="nav-links">
+        <li><a href="blsm.html">Ana Sayfa</a></li>
+        
+        <!-- Açılır Alt Menü (Dropdown) -->
+        <li class="dropdown">
+            <a href="#domains" class="dropbtn">Bilişim Dalları <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="yapay.html">Yapay Zeka & Makine Öğrenmesi</a>
+                <a href="siber.html">Siber Güvenlik</a> 
+               
+            </div>
+        </li>
+        
+        <li><a href="hakkımızda.html">Hakkımızda</a></li>
+        
+        <button id="theme-toggle" class="theme-btn" title="Temayı Değiştir">
+        <i class="fas fa-sun" id="theme-icon"></i>
+    </button>
+    <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const body = document.body;
+
+    themeToggleBtn.addEventListener('click', function() {
+        body.classList.toggle('light-mode');
+        
+        // İkonu güneş ve ay arasında değiştir
+        if (body.classList.contains('light-mode')) {
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon'); // Beyaz moddayken ay simgesi olsun ki karanlığa dönebileceğini göstersin
+        } else {
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun'); // Siyah moddayken güneş simgesi olsun
+        }
+    });
+</script>
+</button>
+    
+    </ul>
+</nav>
+    <hr>
+    <br>
+
+   
+
+    <br>
+
+    <!-- Detaylı İçerik Alanı -->
+    <div class="domains-container">
+        
+        <!-- Büyük Tanıtım Kutusu -->
+        <div style="background-color: #111827; border: 1px solid #1f2937; border-radius: 14px; padding: 40px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <h2 style="font-size: 26px; color: #fff; margin-bottom: 20px;">Yapay Zeka ve Makine Öğrenmesi Nedir?</h2>
+            <p style="color: #9ca3af; line-height: 1.8; font-size: 15px; margin-bottom: 15px;">
+                Yapay zeka, bilgisayar sistemlerinin insan zekasını taklit ederek öğrenme, akıl yürütme, problem çözme ve karar verme yetenekleri kazanmasını sağlayan devrim niteliğinde bir bilişim dalıdır. Makine öğrenmesi ve derin öğrenme algoritmaları sayesinde sistemler, geçmişteki verilerden ders çıkararak kendini sürekli geliştirir.
+            </p>
+            <p style="color: #9ca3af; line-height: 1.8; font-size: 15px;">
+                Doğal dil işleme (LLM), bilgisayarla görü ve otonom sistemler gibi alt alanlarıyla bugün sağlıktan finansa, uzay araştırmalarından günlük hayatımıza kadar her sektörü kökten dönüştürmektedir.
+            </p>
+        </div>
+
+        <h3 class="section-title">Alt Disiplinler ve Uygulama Alanları</h3>
+
+        <!-- Alt Kriter Kart 1 -->
+        <div class="tech-card">
+            <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1000&q=80');"></div>
+            <div class="tech-info">
+                <h3>Doğal Dil İşleme (NLP & LLM)</h3>
+                <p>Bilgisayarların insan dilini yazılı veya sözlü olarak anlamasını, yorumlamasını ve tıpkı bir insan gibi akıcı metinler üretebilmesini sağlayan yapay zeka teknolojisidir.</p>
+            </div>
+        </div>
+
+        <!-- Alt Kriter Kart 2 -->
+        <div class="tech-card">
+            <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1000&q=80');"></div>
+            <div class="tech-info">
+                <h3>Bilgisayarlı Görü (Computer Vision)</h3>
+                <p>Yapay zekanın dijital görüntülere ve videolara bakarak anlam çıkarmasını, nesneleri tanımasını, yüz ve hareket analizi yapabilmesini sağlayan alt bilim dalıdır.</p>
+            </div>
+        </div>
+
+        <!-- Alt Kriter Kart 3 -->
+        <div class="tech-card">
+            <div class="tech-img" style="background-image: url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1000&q=80');"></div>
+            <div class="tech-info">
+                <h3>Derin Öğrenme ve Sinir Ağları</h3>
+                <p>İnsan beyninin çalışma prensibinden esinlenen yapay sinir ağları ile çok katmanlı verileri işleyen en gelişmiş makine öğrenmesi alt dalıdır.</p>
+            </div>
+        </div>
+
+        <!-- Geri Dönüş Butonu -->
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="blsm.html" style="display: inline-block; background: transparent; border: 2px solid #00f0ff; color: #00f0ff; padding: 14px 30px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: 0.3s;">
+                <i class="fas fa-arrow-left"></i> Ana Sayfaya Dön
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 60px;">
+        <p>© 2026 Bilişim Dünyası | Yapay Zeka ve Makine Öğrenmesi Bölümü</p>
+    </footer>
+    
+</body>
+</html>
